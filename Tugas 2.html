@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+
+    <img src="https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378246.jpg?t=st=1741627184~exp=1741630784~hmac=6131ed80b848977fbc6d25ca97cf42069fc23d1267aa801486963fc4a7b37f90&w=996" alt="Banner Pendaftaran" width="600">
+
+    <h2>Form Pendaftaran Kursus</h2>
+
+    <form action="/submit_registration" method="post">
+
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <label for="fname">Nama Lengkap:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" name="gender">
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select><br><br>
+
+            <label for="edu">Jenjang Pendidikan:</label>
+            <select id="edu" name="edu">
+                <optgroup label="Sekolah">
+                    <option value="smp">SMP</option>
+                    <option value="sma">SMA/SMK</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="major">Jurusan yang Diinginkan:</label>
+            <input list="majors" id="major" name="major">
+            <datalist id="majors">
+                <option value="Teknik Informatika">
+                <option value="Teknik Sipil">
+                <option value="Sastra Mesin">
+                <option value="Lainnya">
+            </datalist><br><br>
+
+            <img src="https://img.freepik.com/free-vector/modern-education-concept-tablet-computer_3446-305.jpg?t=st=1741628093~exp=1741631693~hmac=0bb43e0d907dd16a1dea5d822ffcae7cb3051617183aeb1c0410f4eae551a809&w=996" alt="Foto Default" width="100">
+        </fieldset>
+
+        <br>
+
+        <!-- Informasi Kontak -->
+        <fieldset>
+            <legend>Informasi Orang Tua</legend>
+            <label for="fname">Nama Orang Tua:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="0000-0000-0000"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br><br>
+            <img src="https://img.freepik.com/free-vector/clever-man-student-standing-books-stack-with-flag-self-learning-personal-improvement-knowledge-obtaining_335657-3291.jpg?t=st=1741628503~exp=1741632103~hmac=adbbbfa1713801675ed10964a12d8470c22f96f1e89cda29af9835011c123fa8&w=996" alt="Foto Default" width="100">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Kursus</legend>
+            <p>Pemilihan Hari Kursus:</p>
+            <form>
+                <input type="radio" id="hari1" name="jadwal" value="hari1">
+                <label for="hari1"> Senin & Kamis</label><br>
+                <input type="radio" id="hari2" name="jadwal" value="hari2">
+                <label for="hari2"> Selasa & Jumat</label><br>
+                <input type="radio" id="hari3" name="jadwal" value="hari3">
+                <label for="hari3"> Rabu & Sabtu</label>
+            </form>
+
+            <p>Pemilihan Waktu Kursus:</p>
+            <form>
+                <input type="checkbox" id="waktu1" name="waktu" value="pagi">
+                <label for="waktu1"> Pagi (08:00 - 10:00)</label><br>
+                <input type="checkbox" id="waktu2" name="waktu" value="siang">
+                <label for="waktu2"> Siang (13:00 - 15:00)</label><br>
+                <input type="checkbox" id="waktu3" name="waktu" value="malam">
+                <label for="waktu3"> Malam (18:00 - 20:00)</label>
+            </form>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Daftar Sekarang">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
